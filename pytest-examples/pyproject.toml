@@ -1,0 +1,18 @@
+[project]
+name = "pytest-examples"
+version = "0.1.0"
+description = "Examples for learning pytest"
+readme = "README.md"
+authors = [
+    { name = "ruinivist", email = "ruinivist@proton.me" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow",
+    "serial: labels tests for serial selection",
+]
